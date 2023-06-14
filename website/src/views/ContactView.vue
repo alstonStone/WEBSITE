@@ -1,6 +1,6 @@
 <template>
     <div class="contact">
-        <form action="/action_page.php">
+        <form action="http://localhost:7070/contact">
             <label for="email">Enter your email:</label>
             <input type="email" id="email" name="email">
             <input type="submit" value="Submit">
