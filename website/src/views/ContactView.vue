@@ -1,15 +1,18 @@
 <template>
     <div class="contact">
-      <h1>This is a contact page</h1>
+        <form action="/action_page.php">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit">
+        </form>
     </div>
   </template>
   
   <style>
-  @media (min-width: 1024px) {
-    .contact {
-      min-height: 100vh;
+ 
+    .contact{
       display: flex;
       align-items: center;
     }
-  }
+  
   </style>
