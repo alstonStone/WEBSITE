@@ -10,6 +10,7 @@
   import axios, {isCancel, AxiosError} from 'axios';
   export default {
 
+    
     data(){
         return {
           email:''
