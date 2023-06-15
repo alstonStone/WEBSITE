@@ -7,18 +7,22 @@
   </template>
 
 <script>
+  import axios, {isCancel, AxiosError} from 'axios';
   export default {
 
     data(){
         return {
-          email:'',
+          email:''
         };
     },
     methods:{
-      addUser(){
-        console.warn(this.email);
-      }
-    }
+      async addUser(){
+        let result =  await axios.post("http://localhost:7070/contact",
+        {email:this.email},{withCredentials: false}
+        );
+        console.warn(result);
+      },
+    },
   };
 
 
